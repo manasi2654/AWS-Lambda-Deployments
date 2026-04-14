@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manasi Patil | Portfolio</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Manasi Patil</h1>
+    <p>Final Year AIML Student | AWS & DevOps Enthusiast</p>
+</header>
+
+<nav>
+    <a href="#intro">Introduction</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="intro">
+    <div class="container">
+        <div class="card">
+            <h2>Introduction</h2>
+            <p>Hello! I am Manasi Patil, a final-year AIML student passionate about AWS, DevOps, and automation.</p>
+            <p>I enjoy building scalable cloud solutions and working on CI/CD pipelines.</p>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <div class="container">
+        <div class="card">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Engineering (AIML)</strong></p>
+            <p>Final Year Student</p>
+            <p>University: Your University Name</p>
+            <p>Year: 2022 – 2026</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <div class="card">
+            <h2>Projects</h2>
+
+            <p><strong>1. AWS CI/CD Pipeline</strong></p>
+            <p>Built automated deployment using GitHub, CodePipeline, CodeBuild, and S3.</p>
+
+            <p><strong>2. Sales Report Automation</strong></p>
+            <p>Used Lambda, S3, DynamoDB to generate reports.</p>
+
+            <p><strong>3. Python Automation</strong></p>
+            <p>Created scripts to automate cloud tasks.</p>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Click below to test backend integration:</p>
+            <button onclick="callAPI()">Contact Me</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Manasi Patil | Portfolio</p>
+</footer>
+
+<script>
+function callAPI() {
+    fetch("https://your-api-url")   // 🔁 Replace with API Gateway URL
+    .then(res => res.json())
+    .then(data => alert(data.message))
+    .catch(err => alert("Error connecting to backend"));
+}
+</script>
+
+</body>
+</html>
