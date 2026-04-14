@@ -1,1 +1,15 @@
+version: 0.2
 
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies"
+
+  build:
+    commands:
+      - echo "Zipping Lambda code"
+      - zip function.zip lambda_function.py
+
+artifacts:
+  files:
+    - function.zip
